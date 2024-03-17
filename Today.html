@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:ital,wght@0,200;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/Images/SiteStuff/9999999999-removebg-preview (1).png" type="image/x-icon">
+
+    <title>Gallery</title>
+
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                <img src="/Images/SiteStuff/9999999999-removebg-preview (1).png" alt="logo">
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Today.html">Today</a>
+                    </li>
+                    <li>
+                        <a href="/Gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-dark" href="">Login<i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Todays top story</h1> 
+</br>
+    <p id="time"></p>
+    <p>🌟 In a truly remarkable turn of events, eyewitnesses at the local bus station in Worksop were left incredulous as they claimed to have seen two iconic figures, *Superman* and *James Bond*, soaring through the skies above the bustling station. The astonishing spectacle unfolded amidst the backdrop of a typical day, with commuters going about their routines, only to be interrupted by the sight of these legendary characters defying the laws of gravity.
+
+        According to multiple sources present at the scene, the vibrant colors of Superman's suit and the unmistakable sophistication of James Bond's attire left an indelible impression on the onlookers, who were quick to document the unprecedented event. Amidst the flurry of activity, several individuals managed to capture footage of the extraordinary occurrence, which has since sparked fervent discussions within the community.
+        
+        As news of this surreal sighting spreads, it has ignited a wave of curiosity and speculation, prompting many to ponder the plausibility of such an extraordinary occurrence. While some remain skeptical, others are fervently seeking to validate the veracity of these claims, underscoring the profound impact of this inexplicable moment.
+        
+        In light of this unprecedented event, authorities are urging anyone who may have witnessed or captured footage of the spectacle to come forward and share their accounts, as the community seeks to unravel the mystery behind this unanticipated convergence of fiction and reality. Stay tuned for further updates as this extraordinary event continues to captivate the collective imagination. #ExtraordinarySighting #WorksopWonders 🦸‍♂️🎬
+    </p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="gallery">
+        <a href="/Images/1.png" data-lightbox="models" data-title="Superman and JamesBond Fly over Worsop Station">
+            <img src="/Images/1.png" alt="1">
+        </a>
+
+        <a href="/Images/SiteStuff/fff.png" data-lightbox="models" data-title="THIS IS THE IMAGE SCALE FOR FUTURE USE">
+            <img src="/Images/SiteStuff/fff.png" alt="1">
+        </a>
+    </div>
+
+    <button id="toggle">Toggle Dark Mode</button>
+    <script>
+        // Get the root element
+        const root = document.documentElement;
+        // Get the toggle button
+        const toggle = document.getElementById("toggle");
+        // Get the user's preference from localStorage
+        const darkMode = localStorage.getItem("dark-mode");
+        // Check if the user has already chosen a theme
+        if (darkMode) {
+          // If yes, apply it to the root element
+          root.classList.add("dark-theme");
+        }
+        // Add an event listener to the toggle button
+        toggle.addEventListener("click", () => {
+          // Toggle the dark-theme class on the root element
+          root.classList.toggle("dark-theme");
+          // Store or remove the user's preference in localStorage
+          if (root.classList.contains("dark-theme")) {
+            localStorage.setItem("dark-mode", true);
+          } else {
+            localStorage.removeItem("dark-mode");
+          }
+        });
+        </script>
+
+    <script src="/Javascript/gallery.js"></script>
+
+</body>
+</html>
